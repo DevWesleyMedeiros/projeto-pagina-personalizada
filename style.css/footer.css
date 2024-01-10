@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root{
+    --bordas: 2px solid black;
+    --fundo1: red;
+    --fundo2: blue;
+    --fundo3: #a19c9c;
+    --font-padrao: 'Lato', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+footer {
+    max-width: 1500px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #070707;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+footer > div.transparent-border{
+    display: block;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    width: 80%;
+    border-bottom: 1px solid #ffffff14;
+}
+footer > div.copyright{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+}
+footer > div.copyright > p{
+    color: #fff;
+}
+footer > div.copyright > p > span{
+    color: rgb(19, 146, 19);
+}
+footer > div.copyright > div.social-media{
+    width: 150px;
+    height: 50px;
+}
+div.social-media > ul{
+    list-style-type: none;
+    width: 100%;
+}
+div.social-media > ul > li{
+    display: inline;
+    margin: 0.1rem 0.6rem;
+}
+div.social-media > ul > li:nth-child(1){
+    margin-left: 1.3rem;
+}
+div.social-media > ul > li > i{
+    color: antiquewhite;
+    font-size: small;
+    text-align: center;
+}
+footer > abbr > div.icone-scroll-up{
+    float: right;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0;
+    width: 30px;
+    height: 30px;
+    background-color: #72a256;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+abbr > div.icone-scroll-up:hover{
+    background-color: #60b134;
+    transform: scale(1.3);
+}
+@media screen and (max-width: 768px){
+    footer{
+        min-height: 200px;
+    }
+    footer > div.copyright{
+        width: 100%;
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer > div.copyright > div.social-media{
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    footer > abbr > div.icone-scroll-up{
+        display: block;
+        margin: 1rem auto;
+    }
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para baixar programas">
+    <meta name="keywords" content="Palavras-chave, separadas, por, vírgulas">
+    <meta name="author" content="Wesley Medeiros">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="URL_canonica_do_seu_blog">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Título do seu blog">
+    <meta property="og:description" content="Descrição do seu blog para o Facebook">
+    <meta property="og:image" content="URL_da_imagem_para_compartilhamento">
+    <meta property="og:url" content="URL_do_seu_blog">
+    <meta property="og:site_name" content="Nome do seu site">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Título do seu blog para o Twitter">
+    <meta name="twitter:description" content="Descrição do seu blog para o Twitter">
+    <meta name="twitter:image" content="URL_da_imagem_para_o_Twitter">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/header.css">
+    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="stylesheet" href="style.css/footer.css">
+    <title>Blog Pessoal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="social-medias-icons">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <menu>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Contato</a>
+                        </li>
+                    </ul>
+                </menu>
+            </div>
+        </nav>
+        <div class="menu-itens">
+            <menu id="menu">
+                <!-- Menu mobile -->
+                <div class="menu-humburguer">
+                    <i class="fa-solid fa-bars" id="humburguer-menu"></i>
+                    <i class="fa-solid fa-x" id="close-menu-humburguer"></i>
+                </div>
+                <div class="itens-menu-humburguer">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Como baixar</a>
+                        </li>
+                        <li id="li-for-site">
+                            <a href="#">Sites</a>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </li>
+                        <li id="li-for-parceiros"><a href="#">Parceiros</a>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </li>
+                        <li id="li-for-torrents">
+                            <a href="#">Torrents</a>
+                            <span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="#">Reels</a>
+                        </li>
+                        <li>
+                            <a href="#">TikTok</a>
+                        </li>
+                        <li>
+                            <a href="#">Insta</a>
+                        </li>
+                        <li>
+                            <a href="#">Shorts</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menu desktop -->
+                <ul id="lista-Menu">
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next" id="Home">Home</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">Como baixar?</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next" id="sites">Sites
+                            <i class="fa-solid fa-angle-down" style="color: #fff; margin-left: 0.3rem;">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next" id="parceiros">Parceiros
+                            <i class="fa-solid fa-angle-down" style="color: #fff; margin-left: 0.3rem;">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next" id="torrent">Torrents
+                            <i class="fa-solid fa-angle-down" style="color: #fff; margin-left: 0.3rem;">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">Youtube</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">Reels</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">TikTok</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">Insta</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" target="_blank" rel="next">Shorts</a>
+                    </li>
+                </ul>
+                <div class="dropdown-menu-for-site">
+                    <ul id="dropdown-list">
+                        <li>Tech Bench</li>
+                        <li>Arquive.org</li>
+                        <li>Rg aguard</li>
+                    </ul>
+                </div>
+                <div class="dropdown-menu-for-parceiros">
+                    <ul id="dropdown-list1">
+                        <li>Sayro digital</li>
+                        <li>Raton downloads</li>
+                        <li>Bennitch Tech</li>
+                        <li>Fabiano tech</li>
+                    </ul>
+                </div>
+                <div class="dropdown-menu-for-torrents">
+                    <ul id="dropdown-list2">
+                        <li>1377x</li>
+                        <li>bt4g</li>
+                        <li>btdig</li>
+                        <li>eztv</li>
+                        <li>limotorrents</li>
+                        <li>nyaa</li>
+                        <li>rytracker</li>
+                        <li>theparatybay</li>
+                        <li>torlock</li>
+                        <li>torrentsdownloads</li>
+                        <li>torrentsgalaxy</li>
+                        <li>torrentseek</li>
+                        <li>yts</li>
+                    </ul>
+                </div>
+                <div class="search-icons" id="search-icons">
+                    <i class="material-icons" id="search">search</i>
+                    <i class="material-icons" id="close">close</i>
+                </div>
+            </menu>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="main-container">
+                <div class="site-content-left">
+                    <div class="content" id="exclusivo">
+                        <span>
+                            <i class="fa-sharp fa-regular fa-address-card" id="address"></i>
+                        </span>
+                        <p>Exclusivo P/membros</p>
+                    </div>
+                    <div class="content" id="suporte">
+                        <span>
+                            <i class="fa-sharp fa-regular fa-heart" id="heart"></i>
+                        </span>
+                        <p>Suporte ao canal</p>
+                    </div>
+                    <div class="content" id="drivers">
+                        <span>
+                            <i class="fa-solid fa-database" id="database"></i>
+                        </span>
+                        <p>Drivers</p>
+                    </div>
+                    <div class="content" id="pendrives">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-gear" id="pendrive"></i>
+                        </span>
+                        <p>Pendrive de técnico</p>
+                    </div>
+                    <div class="content" id="programas">
+                        <span>
+                            <i class="fa-sharp fa-regular fa-square-check" id="squere-check"></i>
+                        </span>
+                        <p>Programas P/técnicos</p>
+                    </div>
+                    <div class="content" id="recomendados">
+                        <span>
+                            <i class="fa-solid fa-download" id="downloads"></i>
+                        </span>
+                        <p>recomendados</p>
+                    </div>
+                    <div class="content" id="pedidos">
+                        <span>
+                            <i class="fa-sharp fa-regular fa-thumbs-up" id="thumbs"></i>
+                        </span>
+                        <p>Pedidos do canal</p>
+                    </div>
+                    <div class="content" id="presentes">
+                        <span>
+                            <i class="fa-solid fa-gift" id="gifts"></i>
+                        </span>
+                        <p>Presentes do Azarado</p>
+                    </div>
+                    <div class="content" id="drivers2">
+                        <span>
+                            <i class="fa-sharp fa-regular fa-circle-question" id="question-circle"></i>
+                        </span>
+                        <p>Drivers</p>
+                    </div>
+                    <div class="content" id="jogos">
+                        <span>
+                            <i class="fa-solid fa-gamepad" id="gamepad"></i>
+                        </span>
+                        <p>Jogos Portables</p>
+                    </div>
+                </div>
+                <div class="site-content-right">
+                    <div class="main-container-cursos">
+                        <div class="curso">
+                            <span>
+                                <i class="fa-sharp fa-regular fa-address-card"></i>
+                            </span>
+                            <h3>Cursos...</h3>
+                        </div>
+                    </div>
+                    <div class="cursos">
+                        <div class="curso1">
+                            <span style="background-color:#689f38;">
+                                <i class="fa-sharp fa-solid fa-street-view" id="street-view"></i>
+                            </span>
+                            <h3>Curso1</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #ed3b3b;">
+                                <i class="fa-sharp fa-solid fa-gear" id="gear"></i>
+                            </span>
+                            <h3>Curso2</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #ef6c00;">
+                                <i class="fa-sharp fa-regular fa-image"></i>
+                            </span>
+                            <h3>Curso3</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #039be5;">
+                                <i class="fa-sharp fa-solid fa-power-off" id="power-off"></i>
+                            </span>
+                            <h3>Curso4</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #658092;">
+                                <i class="fa-sharp fa-regular fa-circle-play" id="play-circle"></i>
+                            </span>
+                            <h3>Curso5</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #e8db04;">
+                                <i class="fa-sharp fa-regular fa-circle-dot" id="dot-circle"></i>
+                            </span>
+                            <h3>Curso6</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #00c118;">
+                                <i class="fa-solid fa-square-pen" id="squere-pen"></i>
+                            </span>
+                            <h3>Curso7</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #a20f85;">
+                                <i class="fa-sharp fa-regular fa-file-word" id="file-word"></i>
+                            </span>
+                            <h3>Curso8</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #eeb6b0;">
+                                <i class="fa-sharp fa-regular fa-file-excel" id="file-excel"></i>
+                            </span>
+                            <h3>Curso9</h3>
+                        </div>
+                        <div class="curso1">
+                            <span style="background-color: #a5370b;">
+                                <i class="fa-sharp fa-regular fa-file-powerpoint" id="powerpoint"></i>
+                            </span>
+                            <h3>Curso10</h3>
+                        </div>
+                    </div>
+                    <div class="imagem-windows">
+                        <div class="logo-windows">
+                            <img src="assets/logo-windows.png" alt="logo-windows">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sessao2">
+            <div class="container-postagem">
+                <div class="postagem-text">
+                    <p>Postagens Recentes</p>
+                </div>
+                <div class="ver-todas">
+                    <p>Ver todas
+                        <i class="fa-solid fa-angle-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="container-postagem-imagens">
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem1.png" alt="imagem notebook">
+                    </div>
+                    <h3>Acer predator Helios 3000</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-pendrive.png" alt="imagem pendrive">
+                    </div>
+                    <h3>USB with dual Band</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-processador.png" alt="imagem processador">
+                    </div>
+                    <h3>Intel HD win 11</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-notebook2.png" alt="imagem notebook2">
+                    </div>
+                    <h3>Asus Rog Stricx G</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-notebook3.png" alt="imagem imagem-notebook3">
+                    </div>
+                    <h3>Vaio FE15</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-notebook4.png" alt="imagem imagem-notebook4">
+                    </div>
+                    <h3>Lenovo S145 82DJ</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-figura-1-icon.png" alt="imagem figura1">
+                    </div>
+                    <h3>Desparados</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-figura2.png" alt="imagem figura2">
+                    </div>
+                    <h3>IA Face Swap</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-processador2.png" alt="imagem processador2">
+                    </div>
+                    <h3>Metrox g200ew w10 64</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-figura3.png" alt="imagem figura3">
+                    </div>
+                    <h3>Picasa 3.9</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/folders-bars.png" alt="folder-bars">
+                    </div>
+                    <h3>Folger P/ pizzaria PSD</h3>
+                </div>
+                <div class="postagem-imagens">
+                    <div class="img">
+                        <img src="assets/imagem-pizza.ng.png" alt="imagem pizza">
+                    </div>
+                    <h3>Folder P/ bares</h3>
+                </div>
+            </div>
+        </section>
+        <section class="sessao3">
+            <div class="pages">
+                <div class="page">1</div>
+                <div class="page">2</div>
+                <div class="page">3</div>
+                <div class="page">></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="transparent-border"></div>
+        <div class="copyright">
+            <p>copyright 2024 &copy; 
+                <span>Wesley Medeiros da Rosa</span>
+            </p>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <abbr title="Back to top">
+            <div class="icone-scroll-up" id="scroll-up-icons">^</div>
+        </abbr>
+    </footer>
+    <script src="assets-scripts/scroll-up.js"></script>
+    <script src="assets-scripts/menu-dropdown.js"></script>
+    <script src="assets-scripts/search-bar.js"></script>
+    <script src="assets-scripts/humburguer-menu.js"></script>
+</body>
+</html>
