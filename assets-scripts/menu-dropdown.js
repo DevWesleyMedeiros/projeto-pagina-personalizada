@@ -1,39 +1,46 @@
 $(document).ready(() => {
-    $('#sites').mouseenter(function(evt) {
+    $(document).on('mouseenter', '#sites', function(evt) {
         $('.dropdown-menu-for-site').css('display', 'block');
-    }).mouseleave(function(evt) {
+    }).on('mouseleave', '#sites', function(evt) {
         setTimeout(() => {
             if (!$('.dropdown-menu-for-site').is(':hover')) {
                 $('.dropdown-menu-for-site').css('display', 'none');
             }
         }, 10);
     });
-    $('#parceiros').mouseenter(function(evt) {
+
+    $(document).on('mouseenter', '#parceiros', function(evt) {
         $('.dropdown-menu-for-parceiros').css('display', 'block');
-    }).mouseleave(function(evt) {
+    }).on('mouseleave', '#parceiros', function(evt) {
         setTimeout(() => {
             if (!$('.dropdown-menu-for-parceiros').is(':hover')) {
                 $('.dropdown-menu-for-parceiros').css('display', 'none');
             }
         }, 10);
     });
-    $('#torrent').mouseenter(function(evt){
+
+    $(document).on('mouseenter', '#torrent', function(evt) {
         $('.dropdown-menu-for-torrents').css('display', 'block');
-    }).mouseleave(function(){
-        setTimeout(()=>{
+    }).on('mouseleave', '#torrent', function() {
+        setTimeout(() => {
             if (!$('.dropdown-menu-for-torrents').is(':hover')) {
                 $('.dropdown-menu-for-torrents').css('display', 'none');
             }
-        }, 10)
-    })
-    $('.dropdown-menu-for-site').mouseleave(function(evt) {
+        }, 10);
+    });
+
+    $(document).on('mouseleave', '.dropdown-menu-for-site', function(evt) {
         $('.dropdown-menu-for-site').css('display', 'none');
     });
-    $('.dropdown-menu-for-parceiros').mouseleave(function(evt) {
+
+    $(document).on('mouseleave', '.dropdown-menu-for-parceiros', function(evt) {
         $('.dropdown-menu-for-parceiros').css('display', 'none');
     });
-    $('.dropdown-menu-for-torrents').mouseleave(function(evt) {
+
+    $(document).on('mouseleave', '.dropdown-menu-for-torrents', function(evt) {
         $('.dropdown-menu-for-torrents').css('display', 'none');
     });
 });
+
+
 

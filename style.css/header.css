@@ -167,17 +167,12 @@ div.search-icons > i#close, i#search{
     color: #fff;
     padding: 0.8rem 1rem;
 }
-/* div que armazena os icones de menu */
 div.menu-humburguer > i#humburguer-menu, i#close-menu-humburguer{
     width: 100%;
     color: #fff;
     font-size: 25px;
     font-weight: bold;
     padding: 0.8rem 1rem;
-}
-div.search-icons > i#close {
-    display: none;
-    height: 0;
 }
 div.menu-itens > menu > ul > li > a{
     color: #ffff;
@@ -226,7 +221,7 @@ div.dropdown-menu-for-parceiros{
     padding: 0.5rem;
     position: absolute;
     z-index: 1;
-    left: 28.9%;
+    left: 29.1%;
     top: 20%;
     background-color: #070707;
 }
@@ -251,7 +246,7 @@ div.dropdown-menu-for-torrents{
     padding: 0.5rem;
     position: absolute;
     z-index: 1;
-    left: 37.5%;
+    left: 36%;
     top: 20%;
     background-color: #070707;
 }
@@ -301,7 +296,7 @@ div.dropdown-menu-for-torrents > ul > li:hover{
         margin-left: 8%;
     }
     div.itens-menu-humburguer{
-        top: 32.5%;
+        margin-top: 3rem;
         display: none;
         border: 1px solid rgba(255, 255, 255, 0.139);
     }
@@ -327,4 +322,33 @@ div.dropdown-menu-for-torrents > ul > li:hover{
             width: 100%;
         }
     }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    menu#menu > div.dropdown-menu-for-site{
+        left: 28%;
+        top: 18.5%;
+    }
+    menu#menu > div.dropdown-menu-for-parceiros{
+        left: 36.7%;
+        top: 18.5%;
+    }
+    menu#menu > div.dropdown-menu-for-torrents{
+        top: 18.5%;
+        left: 48.5%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 2560px){
+    menu#menu > div.dropdown-menu-for-site{
+        left: 22.6%;
+        top: 18.5%;
+    }
+    menu#menu > div.dropdown-menu-for-parceiros{
+        left: 29.1%;
+        top: 18.5%;
+    }
+    menu#menu > div.dropdown-menu-for-torrents{
+        top: 18.5%;
+        left: 37.9%;
+    }
+    
 }

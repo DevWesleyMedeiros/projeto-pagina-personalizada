@@ -369,6 +369,7 @@ section.sessao2 > div.container-postagem-imagens > div.postagem-imagens > div.im
 }
 section.sessao2 > div.container-postagem-imagens > div.postagem-imagens > h3{
     margin-left: 0.3rem;
+    margin-top: 0.5rem;
     color: #070707;
 }
 section.sessao2 > div.container-postagem-imagens > div.postagem-imagens > h3:hover{
@@ -439,9 +440,8 @@ div.pages > div.page:nth-child(4):hover{
     }
     section.sessao2 > div.container-postagem-imagens{
         width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 10px;
-        margin: 0 2%;
+        display: block;
+        margin: 0 0 0 0;
     }
     section.sessao3{
         margin-top: 1rem;

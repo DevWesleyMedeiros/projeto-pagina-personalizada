@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     IconeFechar.addEventListener("click", (evt) => {
-        evt.stopPropagation();
+        if(evt.stopPropagation()){
+            divIconePesquisa.addEventListener("click", ()=>{
+                return null;
+            })
+        }
         evt.target.style.display = "none"
         let contentListaItens = `<li class="items"><a href="#" target="_blank" rel="next" id="Home">Home</a></li>
         <li class="items"><a href="#" target="_blank" rel="next">Como baixar?</a></li>
@@ -77,25 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
         listaItens.appendChild(input);
         input.focus();
     }
-
-    document.addEventListener("mouseenter", function (evt) {
-        if (evt.target.matches('#sites')) {
-            $('.dropdown-menu-for-site').css('display', 'block');
-        } else if (evt.target.matches('#parceiros')) {
-            $('.dropdown-menu-for-parceiros').css('display', 'block');
-        } else if (evt.target.matches('#torrent')) {
-            $('.dropdown-menu-for-torrents').css('display', 'block');
-        }
-    });
-    document.addEventListener("mouseleave", function (evt) {
-        if (evt.target.matches('.dropdown-menu-for-site')) {
-            $('.dropdown-menu-for-site').css('display', 'none');
-        } else if (evt.target.matches('.dropdown-menu-for-parceiros')) {
-            $('.dropdown-menu-for-parceiros').css('display', 'none');
-        } else if (evt.target.matches('.dropdown-menu-for-torrents')) {
-            $('.dropdown-menu-for-torrents').css('display', 'none');
-        }
-    });
 });
 
 
